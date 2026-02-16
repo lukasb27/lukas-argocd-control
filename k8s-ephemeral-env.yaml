@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: fermentation-station-agent-k8s-ephemeral-env
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:lukasb27/fermentation-station-agent.git
+    targetRevision: HEAD
+    path: k8s
+    kustomize:
+      images:
+        - lukasball/fermentation-station-agent:k8s-ephemeral-env
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: k8s-ephemeral-env
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
