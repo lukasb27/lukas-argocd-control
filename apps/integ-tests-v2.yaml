@@ -14,7 +14,7 @@ spec:
         - lukasball/fermentation-station-agent=lukasball/fermentation-station-agent:integ-tests-v2
       commonAnnotations:
         prNumber: "20"
-        sha: 8234290dd6b3f5e45d49e73fe9fc068768f1594a
+        sha: ea57450df22db94f5f4e789930ddbef7784564b1
   destination:
     server: https://kubernetes.default.svc
     namespace: integ-tests-v2
