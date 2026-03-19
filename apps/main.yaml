@@ -14,7 +14,7 @@ spec:
         - lukasball/fermentation-station-agent=lukasball/fermentation-station-agent:main
       commonAnnotations:
         prNumber: ""
-        sha: 156f16521a978d5d253e91a2a04d96a2e9ecbb82
+        sha: 085f94200ca9d09e4247ccdf6a1ccc84e363a634
   destination:
     server: https://kubernetes.default.svc
     namespace: main
