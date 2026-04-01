@@ -14,7 +14,7 @@ spec:
         - lukasball/fermentation-station-agent=lukasball/fermentation-station-agent:lb-testing
       commonAnnotations:
         prNumber: "26"
-        sha: 5b9b221557f4d9535ca30d492f5376bce75cd3a7
+        sha: 11d5dac7e8f1a528004dfba71e89ebe90b56eeb5
   destination:
     server: https://kubernetes.default.svc
     namespace: lb-testing
